@@ -1,0 +1,211 @@
+@charset "utf-8";
+
+@font-face {
+            font-family: old;
+            src: url(idroid/IDroid.otf) format(opentype);
+            font-weight: normal;
+            font-style: normal;
+}
+
+:root {
+    --color0: #ebe5c5;
+    --color1: #83e1ad;
+    --color2: #3ddc84;
+    --color3: #2fa866;
+    --color4: #1a5c37;
+    --color5: #063d1e;
+
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    
+    
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    background-color: var(--color0);
+    font-family: sans-serif;
+}
+
+.externo::after {
+    content: "\1f517\00a0";
+
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--color2), var(--color5));
+    min-height: 150px;
+    padding-top: 40px;
+
+}
+
+header h1 {
+    color: white;
+    font-family: var(--font-destaque);
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.7em;
+    text-shadow: 2.2px 2.2px 0px rgba(0, 0, 0, 0.562);
+}
+
+header p {
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    }
+nav {
+    background-color: var(--color5);
+    padding: 10px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.486);
+}
+nav a {
+    color: var(--color3);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+nav a:hover {
+    background-color: var(--color2);
+}
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.video iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.video {
+    background-color: var(--color5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 50%;
+
+    position: relative;
+
+}
+
+main img {
+    width: 100%;
+
+}
+main .pequena {
+    max-width: 350px;
+    margin: auto;
+    display: block;
+
+}
+
+main h1 {
+    font-family: old;
+    color: var(--color5);
+}
+
+main h2 {
+    font-family: old;
+    color: var(--color4);
+    font-weight: bold;
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--color1), transparent);
+    text-indent: 8px;
+}
+
+main p {
+    margin: 15px 0px 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+main strong {
+    color: var(--color4);
+    font-weight: bold;
+    padding: 2px 8px;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--color1);
+    color: var(--color5);
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--color3);
+}
+
+aside {
+    background-color: var(--color1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.280);
+}
+
+aside h3 {
+    background-color: var(--color4);
+    color: white;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside ul {
+    list-style-type: "\2714\00a0\00a0";
+    list-style-position: inside;
+    columns: 2;
+
+}
+
+aside ul li {
+    text-decoration: none;
+}
+
+
+footer {
+    background-color: var(--color5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--color1);
+}
+
